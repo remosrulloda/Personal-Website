@@ -1,0 +1,139 @@
+/* Custom properties/variables  */
+:root {
+    --main-white: #f0f0f0;
+    --light-green: rgb(233,240,243);
+    --background-green: rgb(138,159,157);
+    --accent-green: rgb(76,94,92);
+  }
+  
+  html{
+    text-align: center;
+    scroll-behavior: smooth;
+  }
+  
+  #navbar{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    font-size: 1.5rem;
+    background-color: var(--accent-green);
+  }
+  
+  #navlist{
+     margin-right: 2rem;
+     color: var(--main-white); 
+     font-family: 'Space Mono', monospace;
+     justify-content: space-evenly;
+  }
+
+  #navlist a{
+    padding: 0.75rem;
+  }
+  
+  body{
+    background-color: var(--background-green);
+    color: white;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  a{
+    text-decoration: none;
+    color: white;
+  }
+
+
+  #welcome-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--background-green);
+  }
+
+  h1, h2{
+    font-family: 'Space Mono', monospace;
+    font-weight: bold;
+  }
+  
+  #title{
+      font-size: 8vh;
+  }
+
+  h2{
+      font-size: 2.6rem;
+  }
+
+  #subtitle{
+    color: var(--accent-green);
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+    color: var(--main-white);
+  }
+  
+  .thumbnail{
+    width: 500px;
+    height: 500px;
+  }
+
+  .projects-section{
+    text-align: center;
+    padding: 10rem 2rem;
+  }
+
+  .projects-section-header{
+    max-width: 800px;
+    margin: 0 auto 6rem auto;
+  }
+
+  .projects-section img{
+    border-radius: 1%;
+    width: 300px;
+    height: 300px;
+  }
+
+  .project-title{
+    font-family: 'Space Mono', monospace;
+    font-size: 28px;
+    
+  }
+
+  #show-all{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-family: 'Space Mono', monospace;
+    background-color: var(--accent-green);
+    padding: 10px;
+  }
+
+  .projects-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1.2rem;
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    margin-bottom: 6rem;
+  }
+
+.links{
+  display:flex;
+  font-size: 28px;
+  justify-content: space-evenly;
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+#github{
+  height: 40px;
+
+}
+
+/* Breakpoints */
+@media (min-width: 576px){
+
+}
